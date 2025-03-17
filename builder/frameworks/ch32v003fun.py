@@ -67,9 +67,6 @@ def get_ld_defines(chip_name: str):
     if chip_name.startswith("ch32v003"):
         target_mcu = "CH32V003"
         target_mcu_ld = 0
-    elif chip_name.startswith("ch32v002"):
-        target_mcu = "CH32V002"
-        target_mcu_ld = 0
     else:
         mcu_package = 1
         if chip_name.startswith("ch32v10"):
@@ -138,6 +135,10 @@ def get_ld_defines(chip_name: str):
             elif "rb" in chip_name:
                 mcu_package = 2
             target_mcu_ld = 3
+        elif chip_name.startswith("ch32v00"):
+            target_mcu = "CH32V00x"
+            mcu_package = 0
+            target_mcu_ld = 0
         else:
             sys.stdout.write("Unkonwn MCU %s\n" % chip_name)
             env.Exit(-1)
