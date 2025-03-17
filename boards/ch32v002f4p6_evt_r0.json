@@ -1,0 +1,57 @@
+{
+    "build": {
+        "arduino": {
+            "openwch": {
+                "variant": "CH32V00x/CH32V002F4",
+                "variant_h": "variant_CH32V002F4.h"
+            }
+        },
+        "core": "openwch",
+        "extra_flags": "-DCH32V002F4 -DCH32V00X -DCH32V00x -DCH32V002",
+        "f_cpu": "48000000L",
+        "hwids": [
+            [
+                "0x1A86",
+                "0x8010"
+            ]
+        ],
+        "mabi": "ilp32e",
+        "march": "rv32emc",
+        "mcu": "ch32v002f4p6",
+        "series": "ch32v002",
+        "variant": "CH32V002"
+    },
+    "debug": {
+        "onboard_tools": [
+            "wch-link"
+        ],
+        "openocd_config": "wch-riscv.cfg",
+        "svd_path": "CH32V002xx.svd"
+    },
+    "frameworks": [
+        "noneos-sdk",
+        "arduino",
+        "ch32v003fun"
+    ],
+    "name": "CH32V002F4P6 EVT R0",
+    "upload": {
+        "maximum_ram_size": 2048,
+        "maximum_size": 16384,
+        "protocol": "wch-link",
+        "protocols": [
+            "wch-link",
+            "minichlink",
+            "isp",
+            "wlink"
+        ]
+    },
+    "url": "https://www.aliexpress.com/item/1005004895791296.html",
+    "vendor": "W.CH",
+    "id": "ch32v002f4p6_evt_r0",
+    "mcu": "CH32V002F4P6",
+    "memory": {
+        "flash": "16KB",
+        "ram": "4KB",
+        "bootloader": "3328B"
+    }
+}
