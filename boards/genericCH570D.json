@@ -1,0 +1,40 @@
+{
+  "build": {
+    "extra_flags": "-DCH57 -DCH57X -DCH570",
+    "f_cpu": "100000000L",
+    "hwids": [
+      [
+        "0x1A86",
+        "0x8010"
+      ]
+    ],
+    "mabi": "ilp32",
+    "march": "rv32imac",
+    "mcu": "ch570d",
+    "series": "ch57x"
+  },
+  "debug": {
+    "onboard_tools": [
+      "wch-link"
+    ],
+    "openocd_config": "wch-riscv.cfg",
+    "svd_path": "CH57Xxx.svd"
+  },
+  "frameworks": [
+    "noneos-sdk"
+  ],
+  "name": "Generic CH570D",
+  "upload": {
+    "maximum_ram_size": 12288,
+    "maximum_size": 245760,
+    "protocol": "wch-link",
+    "protocols": [
+      "wch-link",
+      "minichlink",
+      "isp",
+      "wlink"
+    ]
+  },
+  "url": "http://www.wch-ic.com/products/CH57X.html",
+  "vendor": "W.CH"
+}
