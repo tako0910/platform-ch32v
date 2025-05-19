@@ -1,5 +1,12 @@
 {
   "build": {
+    "arduino": {
+      "openwch": {
+        "variant": "CH57X/CH570D",
+        "variant_h": "variant_CH570D.h"
+      }
+    },
+    "core": "openwch",
     "extra_flags": "-DCH57 -DCH57X -DCH570",
     "f_cpu": "100000000L",
     "hwids": [
@@ -21,7 +28,8 @@
     "svd_path": "CH57Xxx.svd"
   },
   "frameworks": [
-    "noneos-sdk"
+    "noneos-sdk",
+    "arduino"
   ],
   "name": "Generic CH570D",
   "upload": {

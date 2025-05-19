@@ -1,5 +1,12 @@
 {
   "build": {
+    "arduino": {
+      "openwch": {
+        "variant": "CH57X/CH572Q",
+        "variant_h": "variant_CH572Q.h"
+      }
+    },
+    "core": "openwch",
     "extra_flags": "-DCH57 -DCH57X -DCH572",
     "f_cpu": "100000000L",
     "hwids": [
@@ -21,7 +28,8 @@
     "svd_path": "CH57Xxx.svd"
   },
   "frameworks": [
-    "noneos-sdk"
+    "noneos-sdk",
+    "arduino"
   ],
   "name": "Generic CH572Q",
   "upload": {
