@@ -2,7 +2,7 @@
   "build": {
     "arduino": {
       "openwch": {
-        "variant": "CH57X/CH572Q",
+        "variant": "CH57x/CH572Q",
         "variant_h": "variant_CH572Q.h"
       }
     },
